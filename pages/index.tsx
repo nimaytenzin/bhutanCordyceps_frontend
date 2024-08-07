@@ -12,21 +12,20 @@ const products = [
     title: "Bhutan Cordyceps Tea",
     description:
       "Bhutan Cordyceps Tea by Bhutan Cordyceps Sinensis is a blend of Bhutanese Wild Cordyceps, Tulsi and Green Tea.",
-    link: "#",
+    link: "products/cordycepstea",
   },
   {
     backgroundImageUrl: "/products/picrorhiza/product_front.png",
     title: "Bhutan  Picrorhiza Tea",
     description:
       "Bhutan Picrorrhiza Tea by Bhutan Cordyceps Sinensis is a blend of  picrorrhiza, and black tea.",
-    link: "#",
+    link: "products/picrorhizatea",
   },
   {
     backgroundImageUrl: "/products/wildcordyceps/product.png",
     title: "Bhutan  Wild Cordyceps",
-    description:
-      "Bhutan Picrorrhiza Tea by Bhutan Cordyceps Sinensis is a blend of  picrorrhiza, and black tea.",
-    link: "#",
+    description: "Highest Quality Graded Cordyceps.",
+    link: "products/wildcordyceps",
   },
   // Add more products as needed
 ];

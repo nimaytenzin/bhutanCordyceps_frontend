@@ -1,5 +1,6 @@
 import { Head } from "./head";
 
+import Footer from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
@@ -17,9 +18,7 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
-      <footer className="w-full flex items-center justify-center py-3">
-        <p className="text-primary">© Bhutan Wild Cordyceps</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
