@@ -1,26 +1,29 @@
-import React, { useEffect, useRef } from "react";
-import { title, subtitle } from "@/components/primitives";
+import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+
 gsap.registerPlugin(useGSAP);
 
 export default function IntroText() {
   const container = useRef(null);
 
- useGSAP(
+  useGSAP(
     () => {
-        gsap.from('.title', { x: -360, opacity:0,duration: 2 });
-        gsap.from('.subtitle', { x: -360, opacity:0,duration: 2,delay:0.5 });
-
+      gsap.from(".title", { x: -360, opacity: 0, duration: 2 });
+      gsap.from(".subtitle", { x: -360, opacity: 0, duration: 2, delay: 0.5 });
     },
-    { scope: container }
-); 
+    { scope: container },
+  );
 
   return (
-    <div ref={container} className="w-2/5" style={{ transform: "rotate(-6deg)" }}>
+    <div
+      ref={container}
+      className="w-2/5"
+      style={{ transform: "rotate(-6deg)" }}
+    >
       <h1 className="title text-5xl font-bold">
         Bhutan Wild <br />
-        <span style={{ color: "#BCD89D" }} className="curved-underline">
+        <span className="curved-underline" style={{ color: "#BCD89D" }}>
           {" "}
           Cordyceps Sinensis
         </span>

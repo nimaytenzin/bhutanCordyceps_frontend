@@ -1,7 +1,7 @@
-import DefaultLayout from "@/layouts/default";
 import { Image } from "@nextui-org/image";
+// import useEmblaCarousel from "embla-carousel-react";
 
-import useEmblaCarousel from "embla-carousel-react";
+import DefaultLayout from "@/layouts/default";
 import CordycepsBenefitsCarousel from "@/components/carousel";
 import IntroText from "@/components/introText";
 import ProductCardTest from "@/components/productCard";
@@ -38,9 +38,9 @@ export default function IndexPage() {
     borderImage:
       "linear-gradient(2deg, rgba(255,255,255,1) 0%, rgba(219,245,191,1) 50%, rgba(255,255,255,1) 100%) 1",
   };
-  const [emblaRef] = useEmblaCarousel({
-    loop: true,
-  });
+  // const [emblaRef] = useEmblaCarousel({
+  //   loop: true,
+  // });
 
   return (
     <DefaultLayout>
@@ -51,11 +51,11 @@ export default function IndexPage() {
           <IntroText />
           <div className="w-2/6 flex justify-center">
             <Image
-              width={200}
               alt="NextUI hero Image"
+              className="my-4"
               src="/cordyceps.png"
               style={styles}
-              className="my-4"
+              width={200}
             />
           </div>
           <div className="w-2/6 p-4  ">
@@ -92,9 +92,9 @@ export default function IndexPage() {
             <ProductCardTest
               key={index}
               backgroundImageUrl={product.backgroundImageUrl}
-              title={product.title}
               description={product.description}
               link={product.link}
+              title={product.title}
             />
           ))}
         </div>

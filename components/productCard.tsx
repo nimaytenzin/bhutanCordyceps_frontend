@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface ProductCardProps {
   backgroundImageUrl: string;
@@ -7,15 +7,19 @@ interface ProductCardProps {
   link: string;
 }
 
-const ProductCardTest: React.FC<ProductCardProps> = ({ backgroundImageUrl, title, description, link }) => {
+const ProductCardTest: React.FC<ProductCardProps> = ({
+  backgroundImageUrl,
+  title,
+  description,
+  link,
+}) => {
   return (
     <div className="max-w-sm bg-white rounded-lg overflow-hidden">
       <div className="relative w-full h-96 overflow-hidden">
         <div
           className="absolute top-0 left-0 w-full h-full bg-cover bg-center transition-transform"
           style={{ backgroundImage: `url(${backgroundImageUrl})` }}
-        >
-        </div>
+        />
       </div>
 
       <div className="p-5">
@@ -28,8 +32,8 @@ const ProductCardTest: React.FC<ProductCardProps> = ({ backgroundImageUrl, title
           {description}
         </p>
         <a
-          href={link}
           className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+          href={link}
         >
           View Details
         </a>

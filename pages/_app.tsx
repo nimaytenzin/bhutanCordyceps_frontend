@@ -7,16 +7,13 @@ import { useRouter } from "next/router";
 import { fontSans, fontMono } from "@/config/fonts";
 import "@/styles/globals.css";
 
-
-
-
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   return (
     <div className={`${fontSans.className}`}>
-      <NextUIProvider navigate={router.push} >
-        <NextThemesProvider >
+      <NextUIProvider navigate={router.push}>
+        <NextThemesProvider>
           <Component {...pageProps} />
         </NextThemesProvider>
       </NextUIProvider>
